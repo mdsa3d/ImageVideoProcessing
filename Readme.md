@@ -1,4 +1,5 @@
-# ImgVid Process Application
+# ImageVideoProcessing
+Application to process video and image
 
 
 To run the application, and allowing upload of larger video size
