@@ -1,4 +1,4 @@
-# ImgVid Process Application
+# ImageVideoProcessing Web Application
 
 
 To run the application, and allowing upload of larger video size
