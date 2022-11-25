@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  streamlit_imgvid:
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - '8501:8501'
+    container_name: streamlit_imgvid
+    # volumes:
+    #   - './data:/usr/src/app/data:delegated'
+    #   - './project:/usr/src/app/project:delegated'
