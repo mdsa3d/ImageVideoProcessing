@@ -1,0 +1,8 @@
+venv
+src/__pycache__
+vid.mp4
+frames.zip
+dev
+src/app.py
+src/appv2.py
+src/extractframes
