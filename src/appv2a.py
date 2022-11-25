@@ -25,7 +25,14 @@ with st.sidebar:
 
 file = st.file_uploader("Upload your dataset here")
 
+if file is None:
+    file = "sample.mp4"
+    fps = cv.VideoCapture(file).get(cv.CAP_PROP_FPS)
+else:
+    fps = cv.VideoCapture(file.name).get(cv.CAP_PROP_FPS)
+    
 with st.expander("Preview Video"):
+    st.write(f'This video has {fps} frames')
     st.video(file)
 
 frap = st.number_input('Enter how many frames you want to skip', step=1, value=1)
